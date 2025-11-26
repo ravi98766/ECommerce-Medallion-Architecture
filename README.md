@@ -46,11 +46,11 @@ A Fabric Taskflow was designed where:
 
 •	ForEach Activity iterates through every dataset’s configuration.
 
-•	Inside the loop:
+•	***Inside the loop:***
 
-o	Delete Activity clears existing folder contents (ensuring idempotent runs).
+        o	Delete Activity clears existing folder contents (ensuring idempotent runs).
 
-o	Copy Activity fetches the actual GitHub file and writes it to the specified sink_folder and sink_file.
+        o	Copy Activity fetches the actual GitHub file and writes it to the specified sink_folder and sink_file.
 
 This creates a scalable ingestion pattern where any new file can be added by simply updating the lookup JSON.
 
