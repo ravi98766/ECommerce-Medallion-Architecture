@@ -1,0 +1,14 @@
+DateTable =
+ADDCOLUMNS(
+    CALENDAR(DATE(2022, 1, 1), DATE(2024, 12, 31)),
+    "Year", YEAR([Date]),
+    "Month Number", MONTH([Date]),
+    "Month", FORMAT([Date], "MMMM"),
+    "Month Short", FORMAT([Date], "MMM"),
+    "Quarter", "Q" & FORMAT([Date], "Q"),
+    "Weekday", FORMAT([Date], "dddd"),
+    "Weekday Short", FORMAT([Date], "ddd"),
+    "Day", DAY([Date]),
+    "YearMonth", FORMAT([Date], "YYYY-MM"),
+    "Quarter Number", QUARTER([Date])
+)
